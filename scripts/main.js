@@ -14,7 +14,7 @@ myImage.onclick = function() {
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.textContent  = 'Это твой Koh Tao, ' + myName;
+  myHeading.textContent  = 'РўРІРѕР№ РѕСЃС‚СЂРѕРІ Koh Tao, ' + myName;
 }
 
 if(!localStorage.getItem('name')) {
