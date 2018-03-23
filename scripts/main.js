@@ -17,14 +17,14 @@ function setUserName() {
   'use strict';
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.textContent  = 'Твой остров Koh Tao, ' + myName;
+  myHeading.textContent = 'Твой остров Koh Tao, ' + myName;
 }
 
 if (!localStorage.getItem('name')) {
   setUserName();
 } else {
   var storedName = localStorage.getItem('name');
-  myHeading.innerHTML  = 'Твой остров Koh Tao, ' + storedName;
+  myHeading.innerHTML = 'Твой остров Koh Tao, ' + storedName;
 }
 
 myButton.onclick = function () {
